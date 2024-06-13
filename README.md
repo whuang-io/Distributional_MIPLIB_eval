@@ -12,7 +12,16 @@ instances.txt is a pickled list of paths to instances.
 
 ## Experiments with Learning to Branch:
 ### Setup
-First, clone the original [Learn2Branch](https://github.com/ds4dm/learn2branch/tree/master) repository and follow the instructions in [https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md](https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md) to install the environment. Then, add the modified scripts 03_train_gcnn-modified.py and 05_evaluate.py to the repository.
+First, clone the original [Learn2Branch](https://github.com/ds4dm/learn2branch/tree/master) repository and follow the instructions in [https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md](https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md) to install the environment. Then, add the scripts in this repository to the cloned repository.
+
+### Data
+The downloaded distributions should be placed under data/instances_sep. Then, run the following commands to To collect 10 expert samples for each instance in the training, validation, and test sets.
+```bash
+python 02_generate_dataset_train-custom.py --src_folder data/instances_sep/{DISTRIBUTION_FOLDER}/train{ID} --dst_folder data/samples_sep/{DISTRIBUTION_FOLDER}/train{ID}
+python 02_generate_dataset_train-custom.py --src_folder data/instances_sep/{DISTRIBUTION_FOLDER}/val{ID} --dst_folder data/samples_sep/{DISTRIBUTION_FOLDER}/val{ID}
+python 02_generate_dataset_train-custom.py --src_folder data/instances_sep/{DISTRIBUTION_FOLDER}/test{ID} --dst_folder data/samples_sep/{DISTRIBUTION_FOLDER}/test{ID}
+```
+
 ### To train a model with mixed distributions
 ```bash
 python 03_train_gcnn-modified.py mixed_5_domain -m baseline -s SEED --n_samples_per_domain N
