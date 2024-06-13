@@ -31,15 +31,3 @@ python 05_evaluate.py --ML False --domain TEST_DISTRIBUTION --seed SEED --save_f
 MODEL_FOLDER is mixed_5_domain_n{N} for models trained on mixed distributions and {DISTRIBUTION_FOLDER}_n{N} for models trained on homogeneous distributions. TEST_DISTRIBUTION is the distribution that we test the trained policies with.
 
 We tested with N=80,160,320 and ran with SEED=0,1,2,3,4 for all experiments with both mixed distributions and homogeneous distributions.
-
-## Citation
-Learning to Branch paper
-```bash
-@article{gasse2019exact,
-  title={Exact combinatorial optimization with graph convolutional neural networks},
-  author={Gasse, Maxime and Ch{\'e}telat, Didier and Ferroni, Nicola and Charlin, Laurent and Lodi, Andrea},
-  journal={Advances in neural information processing systems},
-  volume={32},
-  year={2019}
-}
-```
