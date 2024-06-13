@@ -2,6 +2,8 @@
 
 Evaluation code used in experiments on Distributional MIPLIB. The code is modified based on the Learn2Branch GitHub repository [https://github.com/ds4dm/learn2branch/tree/master](https://github.com/ds4dm/learn2branch/tree/master), by [Gasse et al., (2020)](https://arxiv.org/abs/1906.01629).
 
+Data used in our experiments can be downloaded from https://sites.google.com/usc.edu/distributional-miplib/home.
+
 ## To get the performance metrics of instance groups (Gurobi):
 ```bash
 python run_gurobi.py --file instances.txt
