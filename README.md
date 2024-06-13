@@ -11,6 +11,8 @@ python run_gurobi.py --file instances.txt
 instances.txt is a pickled list of paths to instances.
 
 ## Experiments with Learning to Branch:
+### Setup
+First, clone the original [Learn2Branch](https://github.com/ds4dm/learn2branch/tree/master) repository and follow the instructions in [https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md](https://github.com/ds4dm/learn2branch/blob/master/INSTALL.md) to install the environment. Then, add the modified scripts 03_train_gcnn-modified.py and 05_evaluate.py to the repository.
 ### To train a model with mixed distributions
 ```bash
 python 03_train_gcnn-modified.py mixed_5_domain -m baseline -s SEED --n_samples_per_domain N
