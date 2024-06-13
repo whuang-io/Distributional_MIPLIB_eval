@@ -33,9 +33,8 @@ MODEL_FOLDER is mixed_5_domain_n{N} for models trained on mixed distributions an
 We tested with N=80,160,320 and ran with SEED=0,1,2,3,4 for all experiments with both mixed distributions and homogeneous distributions.
 
 ## Citation
-```bash
 Learning to Branch paper
-```
+```bash
 @article{gasse2019exact,
   title={Exact combinatorial optimization with graph convolutional neural networks},
   author={Gasse, Maxime and Ch{\'e}telat, Didier and Ferroni, Nicola and Charlin, Laurent and Lodi, Andrea},
