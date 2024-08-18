@@ -8,6 +8,9 @@ np.random.seed(0)
 
 
 def run_bnb_gurobi(model, time_limit):
+    '''
+    Function to obtain performance metrics for classifying hardness levels: solving time, primal-dual gap, primal-dual integral
+    '''
     def data_cb(model, where):
         if ((where == gp.GRB.Callback.MIP)):
             # see gurobi callback codes: https://www.gurobi.com/documentation/current/refman/cb_codes.html
