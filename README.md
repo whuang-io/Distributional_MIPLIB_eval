@@ -2,7 +2,7 @@
 
 Training and evaluation code used in experiments on Distributional MIPLIB [https://www.arxiv.org/abs/2406.06954](https://www.arxiv.org/abs/2406.06954). 
 
-The code is modified based on the Learn2Branch GitHub repository [https://github.com/ds4dm/learn2branch/tree/master](https://github.com/ds4dm/learn2branch/tree/master), by [Gasse et al., (2020)](https://arxiv.org/abs/1906.01629). Instances data used in our experiments can be downloaded from our Distributional MIPLIB website https://sites.google.com/usc.edu/distributional-miplib/home.
+The code is modified based on the Learn2Branch GitHub repository [https://github.com/ds4dm/learn2branch/tree/master](https://github.com/ds4dm/learn2branch/tree/master), by [Gasse et al., (2020)](https://arxiv.org/abs/1906.01629). Instances data used in our experiments can be downloaded from our Distributional MIPLIB website https://sites.google.com/usc.edu/distributional-miplib.
 
 ## To obtain the performance evaluation metrics (based on Gurobi):
 ```bash
